@@ -1,12 +1,36 @@
 <head>
-	<link rel="icon" href="https://www.speedrun.com/themes/Default/1st.png">
-	<title>WR holders</title>
+
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
 	<!-- Load plotly.js into the DOM -->
 	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+	<style>
+		body{
+	background: url("https://www.speedrun.com/themes/goiwbf/background.png?v=bd30d704");
+	background-position-y: -207px;
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+	}
+	</style>
 </head>
 
 <body>
+<div class="row" style="width: 86%;height: 13px;padding-left: 26;padding-top: 26;"> <div class="col-md-1"> <a href="https://www.twitch.tv/as13b" target="_blank"> <img style="width: 222px;height: 39px;opacity: 0.7;" src="https://itsas13b.github.io/logo.png"> </a> </div>  </div>
 	<center>
+	<br><br><br><br>
 	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
 	</center>
 <script>
@@ -35,8 +59,8 @@ var layout = {
     xref: 'paper',
     x: 0.05,
   },
-  width: 1200,
-  height: 600,
+  width: 1600,
+  height: 700,
   xaxis: {
     type: 'date'
   }
